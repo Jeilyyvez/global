@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <script type="text/javascript">window._ab_id_=148809</script>
+    <script src="https://cdn.botfaqtor.ru/one.js"></script>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="ГЛОБ УПАК, ГРУЗ, ХРАНЕНИЯ, ЛОГИСТИЧЕСКУЮ, СКЛАД, СОХРАННОСТЬ">
+    <meta name="description" content="«ГЛОБ УПАК» - бережное хранение | транспортировка грузов">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css\styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+        rel="stylesheet">
+    <title>«ГЛОБ УПАК» - бережное хранение | транспортировка грузов</title>
+</head>
+
+<body>
+    <header>
+        <div class="slide-out">
+            <div class="burger-nav">
+                <ul>
+                    <li><img src="images\logo_glob_upak.svg" alt="Логотип"></li>
+                    <li><a href="index.html">О НАС</a></li>
+                    <li><a href="services.html">УСЛУГИ</a></li>
+                    <li><a href="warehouses.html">НАШИ СКЛАДЫ</a></li>
+                    <li><a href="prices.html">ЦЕНЫ</a></li>
+                    <li><a href="contacts.html">КОНТАКТЫ</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div id="overlay" onclick="closeMenu()">
+        </div>
+
+        <nav class="header-nav">
+
+            <div class="header-logo">
+                <a href="#"><img src="images\logo_glob_upak.svg" alt="GlobUpak Logo"></a>
+            </div>
+
+            <ul class="header-list">
+                <li><a href="index.html">О НАС</a></li>
+                <li><a href="services.html">УСЛУГИ</a></li>
+                <li><a href="warehouses.html">НАШИ СКЛАДЫ</a></li>
+                <li><a href="prices.html">ЦЕНЫ</a></li>
+                <li><a href="contacts.html">КОНТАКТЫ</a></li>
+            </ul>
+
+            <div class="header-phone">
+                <p><a href="tel:8007750886">8-800-775-08-86</a></p>
+                <button class="open-modal-btn">Обратный звонок</button>
+            </div>
+
+            <button class="burger-button" onclick="show()">
+                <div></div>
+                <div></div>
+                <div></div>
+            </button>
+        </nav>
+        </div>
+        <div class="modal-overlay">
+            <div class="modal-window">
+                <span class="modal-close"></span>
+                <form class="modal-form" method="post">
+
+                        <p>Оставьте заявку</p>
+                        <p>и мы свяжемся с Вами в ближайшее время</p>
+                        <input class="modal-input" type="text" name="name" placeholder="Ваше имя" required>
+                        <input class="modal-input" type="text" name="city" placeholder="Ваш город" required>
+                        <input class="modal-input" type="tel" name="phone" placeholder="+7 (999) 999-9999" required>
+                        <div class="checkbox-div">
+                            <label class="modal-checkbox-label" for="agreement"> <input type="checkbox" id="agreement" name="agreement" required> Я даю
+                                согласие на обработку персональных данных</label>
+                        </div>
+                        <button type="submit" class="main-button main-button-modal-distance">Заказать</button>
+                </form>
+            </div>
+    </header>
+    <main>
+        <div class="price-table-wrapper">
+            <h1>цены</h1>
+
+            <p>транспортные услуги</p>
+            <table class="price-table">
+                <thead class="price-table-head">
+                    <tr>
+                        <th class="price-table-head-item first-column-big-table">Вид услуги</th>
+                        <th class="price-table-head-item two-column-big-table">Грузоподъемность</th>
+                        <th class="price-table-head-item last-two-column-big-table">Расстояние</th>
+                        <th class="price-table-head-item last-two-column-big-table">Стоимость</th>
+                    </tr>
+                </thead>
+                <tbody class="price-table-body">
+                    <tr>
+                        <td class="price-table-item first-column-big-table">
+                            Доставка персональным транспортом
+                        </td>
+                        <td class="price-table-item first-column-big-table">
+                            до 50кг
+                        </td>
+                        <td class="price-table-item last-two-column-big-table">
+                            до 20км
+                        </td>
+                        <td class="price-table-item last-two-column-big-table">
+                            2000р
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="price-table-item first-column-big-table">
+                            Доставка персональным транспортом
+                        </td>
+                        <td class="price-table-item two-column-big-table">
+                            до 50кг
+                        </td>
+                        <td class="price-table-item last-two-column-big-table">
+                            больше 20км
+                        </td>
+                        <td class="price-table-item last-two-column-big-table">
+                            2000р + 30р/км
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="price-table-item first-column-big-table">
+                            Доставка малогрузом
+                        </td>
+                        <td class="price-table-item two-column-big-table">
+                            до 1500кг
+                        </td>
+                        <td class="price-table-item last-two-column-big-table">
+                            до 30км
+                        </td>
+                        <td class="price-table-item last-two-column-big-table">
+                            6000р
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="price-table-item first-column-big-table">
+                            Доставка малогрузом
+                        </td>
+                        <td class="price-table-item two-column-big-table">
+                            до 1500кг
+                        </td>
+                        <td class="price-table-item last-two-column-big-table">
+                            от 30км до 70км
+                        </td>
+                        <td class="price-table-item last-two-column-big-table">
+                            10000р
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="price-table-item first-column-big-table">
+                            Доставка малогрузом
+                        </td>
+                        <td class="price-table-item two-column-big-table">
+                            до 1500кг
+                        </td>
+                        <td class="price-table-item last-two-column-big-table">
+                            больше 70км
+                        </td>
+                        <td class="price-table-item last-two-column-big-table">
+                            10000р + 37р/км
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="price-table-item first-column-big-table">
+                            Доставка фурой
+                        </td>
+                        <td class="price-table-item two-column-big-table">
+                            до 20тонн
+                        </td>
+                        <td class="price-table-item last-two-column-big-table">
+                            до 100км
+                        </td>
+                        <td class="price-table-item last-two-column-big-table">
+                            16000р
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="price-table-item first-column-big-table">
+                            Доставка фурой
+                        </td>
+                        <td class="price-table-item two-column-big-table">
+                            до 20тонн
+                        </td>
+                        <td class="price-table-item last-two-column-big-table">
+                            больше 100км
+                        </td>
+                        <td class="price-table-item last-two-column-big-table">
+                            16000р + 100р/км
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="price-table-item first-column-big-table">
+                            Возврат подписанных документов
+                        </td>
+                        <td class="price-table-item two-column-big-table">
+                            -
+                        </td>
+                        <td class="price-table-item last-two-column-big-table">
+                            -
+                        </td>
+                        <td class="price-table-item last-two-column-big-table">
+                            от 250р
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <p>разгрузка / погрузка фур</p>
+            <table class="price-table">
+                <thead class="price-table-head">
+                    <tr>
+                        <th class="price-table-head-item">Вид услуги</th>
+                        <th class="price-table-head-item">Ед. измерения</th>
+                        <th class="price-table-head-item">Стоимость</th>
+                    </tr>
+                </thead>
+                <tbody class="price-table-body">
+                    <tr>
+                        <td class="price-table-item">
+                            Перегрузка
+                        </td>
+                        <td class="price-table-item">
+                            паллет
+                        </td>
+                        <td class="price-table-item">
+                            350р
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="price-table-item">
+                            Разгрузка механическая
+                        </td>
+                        <td class="price-table-item">
+                            паллет
+                        </td>
+                        <td class="price-table-item">
+                            200р
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="price-table-item">
+                            Разгрузка ручная
+                        </td>
+                        <td class="price-table-item">
+                            кг.
+                        </td>
+                        <td class="price-table-item">
+                            от 10р
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <p>упаковка / переупаковка товара</p>
+            <table class="price-table">
+                <thead class="price-table-head">
+                    <tr>
+                        <th class="price-table-head-item">Вид услуги</th>
+                        <th class="price-table-head-item">Ед. измерения</th>
+                        <th class="price-table-head-item">Стоимость</th>
+                    </tr>
+                </thead>
+                <tbody class="price-table-body">
+                    <tr>
+                        <td class="price-table-item">
+                            Перепаллечивание
+                        </td>
+                        <td class="price-table-item">
+                            паллет
+                        </td>
+                        <td class="price-table-item">
+                            500р
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="price-table-item">
+                            Обрешетка
+                        </td>
+                        <td class="price-table-item">
+                            куб. м.
+                        </td>
+                        <td class="price-table-item">
+                            1500р
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="price-table-item">
+                            Картонная коробка
+                        </td>
+                        <td class="price-table-item">
+                            шт.
+                        </td>
+                        <td class="price-table-item">
+                            от 20р
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="price-table-item">
+                            Стрейч-пленка
+                        </td>
+                        <td class="price-table-item">
+                            паллет
+                        </td>
+                        <td class="price-table-item">
+                            200р
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="price-table-item">
+                            Стреп-лента
+                        </td>
+                        <td class="price-table-item">
+                            шт.
+                        </td>
+                        <td class="price-table-item">
+                            70р
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <p>хранение</p>
+            <table class="price-table">
+                <thead class="price-table-head">
+                    <tr>
+                        <th class="price-table-head-item">Вид услуги</th>
+                        <th class="price-table-head-item">Ед. измерения</th>
+                        <th class="price-table-head-item">Стоимость</th>
+                    </tr>
+                </thead>
+                <tbody class="price-table-body">
+                    <tr>
+                        <td class="price-table-item">
+                            Хранение на открытой площадке
+                        </td>
+                        <td class="price-table-item">
+                            кв.м/сутки
+                        </td>
+                        <td class="price-table-item">
+                            20р
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="price-table-item">
+                            Хранение под навесом
+                        </td>
+                        <td class="price-table-item">
+                            кв.м/сутки
+                        </td>
+                        <td class="price-table-item">
+                            30р
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="price-table-item">
+                            Хранение в холодном ангаре
+                        </td>
+                        <td class="price-table-item">
+                            кв.м/сутки
+                        </td>
+                        <td class="price-table-item">
+                            40р
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="price-table-item">
+                            Хранение в теплом ангаре
+                        </td>
+                        <td class="price-table-item">
+                            кв.м/сутки
+                        </td>
+                        <td class="price-table-item">
+                            60р
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </main>
+    <footer>
+        <nav class="footer-nav">
+            <div class="logo-container">
+                <a href="#"></a><img class="footer-logo" src="images\logo_glob_upak.svg" alt="Логотип"></a>
+                <p>GlobUpak &copy;</p>
+            </div>
+            <ul class="footer-list">
+                <li><a href="index.html">О НАС</a></li>
+                <li><a href="services.html">УСЛУГИ</a></li>
+                <li><a href="warehouses.html">НАШИ СКЛАДЫ</a></li>
+                <li><a href="prices.html">ЦЕНЫ</a></li>
+                <li><a href="contacts.html">КОНТАКТЫ</a></li>
+            </ul>
+            <div class="footer-contacts">
+                <p><a href="tel:8007750886">Телефон 8-800-775-08-86</a></p>
+                <p><a href="mailto:sales@glob-upak.ru">Email sales@glob-upak.ru</a></p>
+            </div>
+        </nav>
+    </footer>
+    <script src="js\burger.js"></script>
+</body>
+</html>

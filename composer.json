@@ -1,0 +1,11 @@
+{
+    "name": "meta3/public",
+    "autoload": {
+        "psr-4": {
+            "Meta3\\Public\\": "src/"
+        }
+    },
+    "require": {
+        "phpmailer/phpmailer": "^6.9"
+    }
+}

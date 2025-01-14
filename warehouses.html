@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="ru">
+<script type="text/javascript">window._ab_id_ = 148809</script>
+<script src="https://cdn.botfaqtor.ru/one.js"></script>
+
+<head>
+    <link rel="stylesheet" href="css/main copy.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="ГЛОБ УПАК, ГРУЗ, ХРАНЕНИЯ, ЛОГИСТИЧЕСКУЮ, СКЛАД, СОХРАННОСТЬ">
+    <meta name="description" content="«ГЛОБ УПАК» - бережное хранение | транспортировка грузов">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css\styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+        rel="stylesheet">
+    <title>«ГЛОБ УПАК» - бережное хранение | транспортировка грузов</title>
+</head>
+
+<body>
+    <header>
+        <div class="slide-out">
+            <div class="burger-nav">
+                <ul>
+                    <li><img src="images\logo_glob_upak.svg" alt="Логотип"></li>
+                    <li><a href="index.html">О НАС</a></li>
+                    <li><a href="services.html">УСЛУГИ</a></li>
+                    <li><a href="warehouses.html">НАШИ СКЛАДЫ</a></li>
+                    <li><a href="prices.html">ЦЕНЫ</a></li>
+                    <li><a href="contacts.html">КОНТАКТЫ</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div id="overlay" onclick="closeMenu()">
+        </div>
+
+        <nav class="header-nav">
+
+            <div class="header-logo">
+                <a href="#"><img src="images\logo_glob_upak.svg" alt="GlobUpak Logo"></a>
+            </div>
+
+            <ul class="header-list">
+                <li><a href="index.html">О НАС</a></li>
+                <li><a href="services.html">УСЛУГИ</a></li>
+                <li><a href="warehouses.html">НАШИ СКЛАДЫ</a></li>
+                <li><a href="prices.html">ЦЕНЫ</a></li>
+                <li><a href="contacts.html">КОНТАКТЫ</a></li>
+            </ul>
+
+            <div class="header-phone">
+                <p><a href="tel:8007750886">8-800-775-08-86</a></p>
+                <button class="open-modal-btn">Обратный звонок</button>
+            </div>
+
+            <button class="burger-button" onclick="show()">
+                <div></div>
+                <div></div>
+                <div></div>
+            </button>
+        </nav>
+        </div>
+        <div class="modal-overlay">
+            <div class="modal-window">
+                <span class="modal-close"></span>
+                <form class="modal-form" method="post">
+
+                    <p>Оставьте заявку</p>
+                    <p>и мы свяжемся с Вами в ближайшее время</p>
+                    <input class="modal-input" type="text" name="name" placeholder="Ваше имя" required>
+                    <input class="modal-input" type="text" name="city" placeholder="Ваш город" required>
+                    <input class="modal-input" type="tel" name="phone" placeholder="+7 (999) 999-9999" required>
+                    <div class="checkbox-div">
+                        <label class="modal-checkbox-label" for="agreement"> <input type="checkbox" id="agreement"
+                                name="agreement" required> Я даю
+                            согласие на обработку персональных данных</label>
+                    </div>
+                    <button type="submit" class="main-button main-button-modal-distance">Заказать</button>
+                </form>
+            </div>
+    </header>
+    <main>
+        <div id="popupOverlay" class="popup-overlay">
+            <div id="popup" class="popup">
+                <div class="popup-content">
+                    <span class="close-btn" id="closePopup"></span>
+                    <p class="popupTitle" id="popupTitle">Заголовок</p>
+                    <img id="popupImage" src="" alt="Карта" class="popup-map">
+                    <p class="popupDescription popupLink underlined-text"><a id="popupDescription" href="#"
+                            target="_blank" class="popup-description">Описание</a></p>
+                    <ol class="popupDescription" id="popupServices"></ol>
+                </div>
+            </div>
+        </div>
+        <div class="warehouse-wrapper">
+            <section class="warehouses">
+                <div class="warehouses-title-and-desc">
+                    <p class="warehouses-main-title">склады в москве</p>
+                    <p class="warehouses-title-desc">Перечень оказываемых услуг на складах
+                        может отличаться, уточняйте у оператора по номеру: <a href="tel:8007750886">8-800-775-08-86</a>
+                    </p>
+                </div>
+                <ul class="warehouse-list">
+                    <li class="warehouse-item">
+                        <img class="warehouse-img" src="images/warehouse-1.jpg" alt="Склад">
+                        <div class="warehouse-address-container">
+                            <p class="warehouse-address warehouse-name">склад 1</p>
+                            <p class="warehouse-address">Адрес: МО, Химки, Вашутинское шоссе, 3Б</p>
+                            <button class="main-button main-button-distance openPopup" data-title="Москва-1"
+                                data-image="images/moscow-1.png" data-description="МО, Химки, Вашутинское шоссе, 3Б"
+                                data-link="https://yandex.ru/maps/10758/himki/house/vashutinskoye_shosse_3b/Z04YdQ5nQUwPQFtvfXVzcXViYg==/?ll=37.397898%2C55.920916&z=16.47"
+                                data-services="1. Перегрузка, 2. Разгрузка механическая, 3. Разгрузка ручная, 4. Перепаллетирование, 5. Обрешетка, 6. Картонная коробка, 7. Стрейч-пленка, 8. Стреп-лента, 9. Хранение на открытой площадке, 10. Хранение под навесом">Перечень
+                                услуг</button>
+                        </div>
+                    </li>
+                    <li class="warehouse-item">
+                        <img class="warehouse-img" src="images/warehouse-2.png" alt="Склад">
+                        <div class="warehouse-address-container">
+                            <p class="warehouse-address warehouse-name">склад 2</p>
+                            <p class="warehouse-address">Адрес: МО, Солнечногорский р-н, дер. Кривцово, ул. Зоокомбинат
+                                799</p>
+                            <button class="main-button main-button-distance openPopup" data-title="Москва-2"
+                                data-image="images/moscow-2.png" data-description="МО, Солнечногорский р-н, дер. Кривцово, ул. Зоокомбинат
+                                799"
+                                data-link="https://yandex.ru/maps/1/moscow-and-moscow-oblast/house/ulitsa_zookombinat_799/Z08YfwdhSkMDQFtsfX11dX5rYg==/?ll=36.901363%2C56.144286&z=16.47"
+                                data-services="1. Перегрузка, 2. Разгрузка механическая, 3. Разгрузка ручная, 4. Перепаллетирование, 5. Обрешетка, 6. Картонная коробка, 7. Стрейч-пленка, 8. Стреп-лента, 9. Хранение на открытой площадке">Перечень
+                                услуг</button>
+                        </div>
+                    </li>
+                    <li class="warehouse-item">
+                        <img class="warehouse-img" src="images/warehouse-3.jpg" alt="Склад">
+                        <div class="warehouse-address-container">
+                            <p class="warehouse-address warehouse-name">склад 3</p>
+                            <p class="warehouse-address">Адрес: МО, дер. Кочугино, Солнечногорский р-н.</p>
+                            <button class="main-button main-button-distance openPopup" data-title="Москва-3"
+                                data-image="images/moscow-3.png"
+                                data-description="МО, дер. Кочугино, Солнечногорский р-н."
+                                data-link="https://yandex.ru/maps/?ll=37.152056%2C56.096667&mode=search&sll=37.187469%2C56.099648&text=56.099648%2C37.187469&z=11.29"
+                                data-services="1. Перегрузка, 2. Разгрузка механическая, 3. Разгрузка ручная, 4. Перепаллетирование, 5. Обрешетка, 6. Картонная коробка, 7. Стрейч-пленка, 8. Стреп-лента, 9. Хранение на открытой площадке">Перечень
+                                услуг</button>
+                        </div>
+                    </li>
+                    <li class="warehouse-item">
+                        <img class="warehouse-img" src="images/warehouse-4.jpg" alt="Склад">
+                        <div class="warehouse-address-container">
+                            <p class="warehouse-address warehouse-name">склад 4</p>
+                            <p class="warehouse-address">Адрес: МО, Химки, микрорайон Подрезково, квартал Кирилловка, 22
+                            </p>
+                            <button class="main-button main-button-distance openPopup" data-title="Москва-4"
+                                data-image="images/moscow-4.png"
+                                data-description="МО, Химки, микрорайон Подрезково, квартал Кирилловка, 22"
+                                data-link="https://yandex.ru/maps/10758/himki/house/kvartal_kirillovka_22/Z04YdQRnTEQDQFtvfXV0eXxlYA==/?ll=37.337514%2C55.958064&z=16.47"
+                                data-services="1. Перегрузка, 2. Разгрузка механическая, 3. Разгрузка ручная, 4. Перепаллетирование, 5. Обрешетка, 6. Картонная коробка, 7. Стрейч-пленка, 8. Стреп-лента, 9. Хранение на открытой площадке, 10. Хранение в теплом ангаре">Перечень
+                                услуг</button>
+                        </div>
+                    </li>
+                    </li>
+                    <li class="warehouse-item">
+                        <img class="warehouse-img" src="images/warehouse-5.jpg" alt="Склад">
+                        <div class="warehouse-address-container">
+                            <p class="warehouse-address warehouse-name">склад 5</p>
+                            <p class="warehouse-address">Адрес: МО, Королев, Ярославский проезд, 116А</p>
+                            <button class="main-button main-button-distance openPopup" data-title="Москва-5"
+                                data-image="images/moscow-5.png"
+                                data-description="МО, Королев, Ярославский проезд, 116А"
+                                data-link="https://yandex.ru/maps/20728/korolev/house/yaroslavskiy_proyezd_116a/Z04YcQ9mTEwHQFtvfXVwc3thZw==/?ll=37.786591%2C55.912723&z=16.47"
+                                data-services="1. Перегрузка, 2. Разгрузка механическая, 3. Разгрузка ручная, 4. Перепаллетирование, 5. Обрешетка, 6. Картонная коробка, 7. Стрейч-пленка, 8. Стреп-лента, 9. Хранение на открытой площадке">Перечень
+                                услуг</button>
+                        </div>
+                    </li>
+                    <li class="warehouse-item">
+                        <img class="warehouse-img" src="images/warehouse-6.jpg" alt="Склад">
+                        <div class="warehouse-address-container">
+                            <p class="warehouse-address warehouse-name">склад 6</p>
+                            <p class="warehouse-address">Адрес: 104 км МКАД внешняя сторона (за заправкой Роснефть)</p>
+                            <button class="main-button main-button-distance openPopup" data-title="Москва-6"
+                                data-image="images/moscow-6.png"
+                                data-description="104 км МКАД внешняя сторона (за заправкой Роснефть)"
+                                data-link="https://yandex.ru/maps/10716/balashiha/?ll=37.838814%2C55.834105&mode=search&sll=37.834148%2C55.826852&text=55.826852%2C37.834148&z=14.34"
+                                data-services="1. Перегрузка, 2. Разгрузка механическая, 3. Разгрузка ручная, 4. Перепаллетирование, 5. Обрешетка, 6. Картонная коробка, 7. Стрейч-пленка, 8. Стреп-лента, 9. Хранение на открытой площадке">Перечень
+                                услуг</button>
+                        </div>
+                    </li>
+                    <li class="warehouse-item">
+                        <img class="warehouse-img" src="images/warehouse-7.jpg" alt="Склад">
+                        <div class="warehouse-address-container">
+                            <p class="warehouse-address warehouse-name">склад 7</p>
+                            <p class="warehouse-address">Адрес: Горьковское шоссе, 34й км</p>
+                            <button class="main-button main-button-distance openPopup" data-title="Москва-7"
+                                data-image="images/moscow-7.png" data-description="Горьковское шоссе, 34й к"
+                                data-link="https://yandex.ru/maps/?ll=38.138618%2C55.819098&mode=search&sll=38.134027%2C55.815427&text=55.815427%2C38.134027&z=14.22"
+                                data-services="1. Перегрузка, 2. Разгрузка механическая, 3. Разгрузка ручная, 4. Перепаллетирование, 5. Обрешетка, 6. Картонная коробка, 7. Стрейч-пленка, 8. Стреп-лента, 9. Хранение на открытой площадке">Перечень
+                                услуг</button>
+                        </div>
+                    </li>
+                    <li class="warehouse-item">
+                        <img class="warehouse-img" src="images/warehouse-8.jpg" alt="Склад">
+                        <div class="warehouse-address-container">
+                            <p class="warehouse-address warehouse-name">склад 8</p>
+                            <p class="warehouse-address">Адрес: Гор.округ Подольск, Московское малое кольцо, строение 1.
+                            </p>
+                            <button class="main-button main-button-distance openPopup" data-title="Москва-8"
+                                data-image="images/moscow-8.png"
+                                data-description="Гор.округ Подольск, Московское малое кольцо, строение 1."
+                                data-link="https://yandex.ru/maps/1/moscow-and-moscow-oblast/house/a_107_moskovskoye_maloye_koltso_s1/Z04YcwVgTk0PQFtvfX9ydXlkZg==/?ll=37.520788%2C55.334573&z=16.47"
+                                data-services="1. Перегрузка, 2. Разгрузка механическая, 3. Разгрузка ручная, 4. Перепаллетирование, 5. Обрешетка, 6. Картонная коробка, 7. Стрейч-пленка, 8. Стреп-лента, 9. Хранение на открытой площадке">Перечень
+                                услуг</button>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+            <section class="warehouses">
+                <div class="warehouses-title-and-desc">
+                    <p class="warehouses-main-title">склады в санкт-петербурге</p>
+                    <p class="warehouses-title-desc">Перечень оказываемых услуг на складах
+                        может отличаться, уточняйте у оператора по номеру: <a href="tel:8007750886">8-800-775-08-86</a>
+                    </p>
+                </div>
+                <ul class="warehouse-list">
+                    <li class="warehouse-item">
+                        <img class="warehouse-img" src="images/warehouse-1.jpg" alt="Склад">
+                        <div class="warehouse-address-container">
+                            <p class="warehouse-address warehouse-name">склад 1</p>
+                            <p class="warehouse-address">Адрес: г. Санкт-Петербург, ул. Софийская, 62 А</p>
+                            <button class="main-button main-button-distance openPopup" data-title="Санкт-Петербург-1"
+                                data-image="images/piter-1.png"
+                                data-description="г. Санкт-Петербург, ул. Софийская, 62 А"
+                                data-link="https://yandex.ru/maps/2/saint-petersburg/house/sofiyskaya_ulitsa_62a/Z0kYcgVkSEIPQFtjfXR0d39kbQ==/?ll=30.424178%2C59.856379&z=16.47"
+                                data-services="1. Перегрузка, 2. Разгрузка механическая, 3. Разгрузка ручная, 4. Перепаллетирование, 5. Обрешетка, 6. Картонная коробка, 7. Стрейч-пленка, 8. Стреп-лента, 9. Хранение на открытой площадке">Перечень
+                                услуг</button>
+                        </div>
+                    </li>
+                    <li class="warehouse-item">
+                        <img class="warehouse-img" src="images/warehouse-2.png" alt="Склад">
+                        <div class="warehouse-address-container">
+                            <p class="warehouse-address warehouse-name">склад 2</p>
+                            <p class="warehouse-address">Адрес: г. Санкт-Петербург, 1-Бадаевский проезд, д.3</p>
+                            <button class="main-button main-button-distance openPopup" data-title="Санкт-Петербург-2"
+                                data-image="images/piter-2.png"
+                                data-description="г. Санкт-Петербург, 1-Бадаевский проезд, д.3"
+                                data-link="https://yandex.ru/maps/2/saint-petersburg/house/1_y_badayevskiy_proyezd_3/Z0kYdQ5iSEQAQFtjfXRxd35hbA==/?ll=30.392117%2C59.806229&z=16.47"
+                                data-services="1. Перегрузка, 2. Разгрузка механическая, 3. Разгрузка ручная, 4. Перепаллетирование, 5. Обрешетка, 6. Картонная коробка, 7. Стрейч-пленка, 8. Стреп-лента, 9. Хранение на открытой площадке">Перечень
+                                услуг</button>
+                        </div>
+                    </li>
+                    <li class="warehouse-item">
+                        <img class="warehouse-img" src="images/warehouse-3.jpg" alt="Склад">
+                        <div class="warehouse-address-container">
+                            <p class="warehouse-address warehouse-name">склад 3</p>
+                            <p class="warehouse-address">Адрес: Л.О. Уткина заводь, 6 ( за заправкой Лукойл)</p>
+                            <button class="main-button main-button-distance openPopup" data-title="Санкт-Петербург-3"
+                                data-image="images/piter-3.png"
+                                data-description="Л.О. Уткина заводь, 6 ( за заправкой Лукойл)"
+                                data-link="https://yandex.ru/maps/org/lukoyl/1279113449/?ll=30.526229%2C59.879092&mode=search&sctx=ZAAAAAgBEAAaKAoSCYoFvqJbhz5AEdNmnIao7k1AEhIJ8fYgBORLwD8RUMO3sG68oz8iBgABAgMEBSgKOABAro4KSAFiPnJlYXJyPXNjaGVtZV9Mb2NhbC9HZW8vTmVhcmJ5U2VhcmNoL1Jlc2V0SWZXaW5kb3dEcmFnZ2VkQXdheT0xYjhyZWFycj1zY2hlbWVfTG9jYWwvR2VvL05lYXJieVNlYXJjaC9EaXNwbGF5SW5GaWx0ZXJTZXQ9MWIucmVhcnI9c2NoZW1lX0xvY2FsL0dlby9OZWFyYnlTZWFyY2gvQXNGaWx0ZXI9MWIwcmVhcnI9c2NoZW1lX0xvY2FsL0dlby9FbXB0eVJlc3VsdFdpbmRvd0lmRHJhZz0xYkByZWFycj1zY2hlbWVfTG9jYWwvR2VvL05lYXJieVNlYXJjaC9Nb3ZlV2luZG93QXRGaXJzdEZpbHRlcmluZz0xYjJyZWFycj1zY2hlbWVfTG9jYWwvR2VvL05lYXJieVNlYXJjaC9Tb3J0RGlzdGFuY2U9MWoCcnWdAc3MzD2gAQCoAQC9ASzEtenCAQXp8fbhBIICS9CbLtCeLiDQo9GC0LrQuNC90LAg0LfQsNCy0L7QtNGMLCA2ICgg0LfQsCDQt9Cw0L%2FRgNCw0LLQutC%2B0Lkg0JvRg9C60L7QudC7KYoCAJICATKaAgxkZXNrdG9wLW1hcHOqAq4BODU1MjQ4MzczNyw2MDAyNDA0LDQxOTM5MjY0MzAsMTc1NjU3MjQ0NjQsMjMzMzA1MzMyOTA5LDYwMDM1NTksODQ1NzAzMzMxLDE1MDc5MTQ4NzUxMywxODk1MDEyMzExLDEzNjc0NjYzNDU2MywzNTQ3MTg2OTMyNywyMzY4NjYyMzcwNyw2MDAzMjA2LDYwMDM2MTEsMTgzODQ4OTQxNjksMTYzNDUxMjM1MDYwsAIB&sll=30.526229%2C59.879092&sspn=0.015915%2C0.004816&text=%D0%9B.%D0%9E.%20%D0%A3%D1%82%D0%BA%D0%B8%D0%BD%D0%B0%20%D0%B7%D0%B0%D0%B2%D0%BE%D0%B4%D1%8C%2C%206%20%28%20%D0%B7%D0%B0%20%D0%B7%D0%B0%D0%BF%D1%80%D0%B0%D0%B2%D0%BA%D0%BE%D0%B9%20%D0%9B%D1%83%D0%BA%D0%BE%D0%B9%D0%BB%29&z=16.25"
+                                data-services="1. Перегрузка, 2. Разгрузка механическая, 3. Разгрузка ручная, 4. Перепаллетирование, 5. Обрешетка, 6. Картонная коробка, 7. Стрейч-пленка, 8. Стреп-лента, 9. Хранение на открытой площадке">Перечень
+                                услуг</button>
+                        </div>
+                    </li>
+                    <li class="warehouse-item">
+                        <img class="warehouse-img" src="images/warehouse-4.jpg" alt="Склад">
+                        <div class="warehouse-address-container">
+                            <p class="warehouse-address warehouse-name">склад 4</p>
+                            <p class="warehouse-address">Адрес: г. Санкт-Петербург, Московское шоссе, 185Т</p>
+                            <button class="main-button main-button-distance openPopup" data-title="Санкт-Петербург-4"
+                                data-image="images/piter-4.png"
+                                data-description="г. Санкт-Петербург, Московское шоссе, 185Т"
+                                data-link="https://yandex.ru/maps/2/saint-petersburg/?ll=30.443146%2C59.758914&mode=search&sll=30.463170%2C59.772040&text=59.772040%2C30.463170&z=11.39"
+                                data-services="1. Перегрузка, 2. Разгрузка механическая, 3. Разгрузка ручная, 4. Перепаллетирование, 5. Обрешетка, 6. Картонная коробка, 7. Стрейч-пленка, 8. Стреп-лента, 9. Хранение на открытой площадке, 10. Хранение в холодном ангаре">Перечень
+                                услуг</button>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+            <section class="warehouses">
+                <div class="warehouses-title-and-desc">
+                    <p class="warehouses-main-title">склады в твери</p>
+                    <p class="warehouses-title-desc">Перечень оказываемых услуг на складах
+                        может отличаться, уточняйте у оператора по номеру: <a href="tel:8007750886">8-800-775-08-86</a>
+                    </p>
+                </div>
+                <ul class="warehouse-list">
+                    <li class="warehouse-item">
+                        <img class="warehouse-img" src="images/warehouse-1.jpg" alt="Склад">
+                        <div class="warehouse-address-container">
+                            <p class="warehouse-address warehouse-name">склад 1</p>
+                            <p class="warehouse-address">Адрес: г. Тверь, Старицкое шоссе, 6</p>
+                            <button class="main-button main-button-distance openPopup" data-title="Тверь-1"
+                                data-image="images/tver-1.png" data-description="г. Тверь, Старицкое шоссе, 6"
+                                data-link="https://yandex.ru/maps/14/tver/?ll=35.814456%2C56.841650&mode=search&sll=35.815873%2C56.841631&text=56.841631%2C35.815873&z=16.47"
+                                data-services="1. Перегрузка, 2. Разгрузка механическая, 3. Разгрузка ручная, 4. Перепаллетирование, 5. Обрешетка, 6. Картонная коробка, 7. Стрейч-пленка, 8. Стреп-лента, 9. Хранение на открытой площадке, 10. Хранение в холодном ангаре">Перечень
+                                услуг</button>
+                        </div>
+                    </li>
+                    <li class="warehouse-item">
+                        <img class="warehouse-img" src="images/warehouse-2.png" alt="Склад">
+                        <div class="warehouse-address-container">
+                            <p class="warehouse-address warehouse-name">склад 2</p>
+                            <p class="warehouse-address">Адрес: г. Тверь ул. Коминтерна, 91/14</p>
+                            <button class="main-button main-button-distance openPopup" data-title="Тверь-2"
+                                data-image="images/tver-2.png" data-description="г. Тверь ул. Коминтерна, 91/14"
+                                data-link="https://yandex.ru/maps/14/tver/house/ulitsa_kominterna_91_14/Z0wYfwVhSEYGQFtsfXRzeHxiYQ==/?ll=35.921131%2C56.829015&z=16.47"
+                                data-services="1. Перегрузка, 2. Разгрузка механическая, 3. Разгрузка ручная, 4. Перепаллетирование, 5. Обрешетка, 6. Картонная коробка, 7. Стрейч-пленка, 8. Стреп-лента, 9. Хранение на открытой площадке, 10. Хранение в холодном ангаре">Перечень
+                                услуг</button>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+            <section class="warehouses">
+                <div class="warehouses-title-and-desc">
+                    <p class="warehouses-main-title">склады в рязани</p>
+                    <p class="warehouses-title-desc">Перечень оказываемых услуг на складах
+                        может отличаться, уточняйте у оператора по номеру: <a href="tel:8007750886">8-800-775-08-86</a>
+                    </p>
+                </div>
+                <ul class="warehouse-list">
+                    <li class="warehouse-item">
+                        <img class="warehouse-img" src="images/warehouse-1.jpg" alt="Склад">
+                        <div class="warehouse-address-container">
+                            <p class="warehouse-address warehouse-name">склад 1</p>
+                            <p class="warehouse-address">Адрес: г. Рязань, Южный промузел, д 6 к5</p>
+                            <button class="main-button main-button-distance openPopup" data-title="Рязань"
+                                data-image="images/razyan-1.png"
+                                data-description="Адрес: г. Рязань, Южный промузел, д 6 к5"
+                                data-link="https://yandex.ru/maps/11/ryazan/house/rayon_yuzhny_promyshlenny_uzel_6s5/Z0AYcQVmTUICQFtufXl5dX9qYg==/?ll=39.726475%2C54.584396&z=16.47"
+                                data-services="1. Перегрузка, 2. Разгрузка механическая, 3. Разгрузка ручная, 4. Перепаллетирование, 5. Обрешетка, 6. Картонная коробка, 7. Стрейч-пленка, 8. Стреп-лента, 9. Хранение на открытой площадке">Перечень
+                                услуг</button>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+            <section class="warehouses">
+                <div class="warehouses-title-and-desc">
+                    <p class="warehouses-main-title">склады в туле</p>
+                    <p class="warehouses-title-desc">Перечень оказываемых услуг на складах
+                        может отличаться, уточняйте у оператора по номеру: <a href="tel:8007750886">8-800-775-08-86</a>
+                    </p>
+                </div>
+                <ul class="warehouse-list">
+                    <li class="warehouse-item">
+                        <img class="warehouse-img" src="images/warehouse-1.jpg" alt="Склад">
+                        <div class="warehouse-address-container">
+                            <p class="warehouse-address warehouse-name">склад 1</p>
+                            <p class="warehouse-address">Адрес: г. Тула, Ханинский проезд, 17</p>
+                            <button class="main-button main-button-distance openPopup" data-title="Тула"
+                                data-image="images/tyla-1.png" data-description="г. Тула, Ханинский проезд, 17"
+                                data-link="https://yandex.ru/maps/15/tula/?ll=37.545618%2C54.186437&mode=search&sll=37.545231%2C54.186498&text=54.186498%2C37.545231&z=16.47"
+                                data-services="1. Перегрузка, 2. Разгрузка механическая, 3. Разгрузка ручная, 4. Перепаллетирование, 5. Обрешетка, 6. Картонная коробка, 7. Стрейч-пленка, 8. Стреп-лента, 9. Хранение на открытой площадке">Перечень
+                                услуг</button>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+            <section class="warehouses">
+                <div class="warehouses-title-and-desc">
+                    <p class="warehouses-main-title">склады в ярославле</p>
+                    <p class="warehouses-title-desc">Перечень оказываемых услуг на складах
+                        может отличаться, уточняйте у оператора по номеру: <a href="tel:8007750886">8-800-775-08-86</a>
+                    </p>
+                </div>
+                <ul class="warehouse-list">
+                    <li class="warehouse-item">
+                        <img class="warehouse-img" src="images/warehouse-1.jpg" alt="Склад">
+                        <div class="warehouse-address-container">
+                            <p class="warehouse-address warehouse-name">склад 1</p>
+                            <p class="warehouse-address">адрес: г. Ярославль, 10 Км Московского шоссе</p>
+                            <button class="main-button main-button-distance openPopup" data-title="Ярославь-1"
+                                data-image="images/yaroslavl-1.png"
+                                data-description="г. Ярославль, 10 Км Московского шоссе"
+                                data-link="https://yandex.ru/maps/?ll=39.808195%2C57.546259&mode=search&sll=39.805806%2C57.545650&text=57.545650%2C39.805806&z=16.17"
+                                data-services="1. Перегрузка, 2. Разгрузка механическая, 3. Разгрузка ручная, 4. Перепаллетирование, 5. Обрешетка, 6. Картонная коробка, 7. Стрейч-пленка, 8. Стреп-лента, 9. Хранение на открытой площадке">Перечень
+                                услуг</button>
+                        </div>
+                    </li>
+                    <li class="warehouse-item">
+                        <img class="warehouse-img" src="images/warehouse-2.png" alt="Склад">
+                        <div class="warehouse-address-container">
+                            <p class="warehouse-address warehouse-name">склад 2</p>
+                            <p class="warehouse-address">адрес: г. Ярославль, пос. Карачиха, ул. Школьная, 36с</p>
+                            <button class="main-button main-button-distance openPopup" data-title="Ярославль-2"
+                                data-image="images/yaroslavl-2.png"
+                                data-description="г. Ярославль, пос. Карачиха, ул. Школьная, 36с"
+                                data-link="https://yandex.ru/maps/10841/yaroslavl-oblast/house/shkolnaya_ulitsa_36/Z0AYcQFiQEcOQFttfXp1d3xmZg==/?ll=39.762929%2C57.646052&z=16.47"
+                                data-services="1. Перегрузка, 2. Разгрузка механическая, 3. Разгрузка ручная, 4. Перепаллетирование, 5. Обрешетка, 6. Картонная коробка, 7. Стрейч-пленка, 8. Стреп-лента, 9. Хранение на открытой площадке">Перечень
+                                услуг</button>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+            <section class="warehouses">
+                <div class="warehouses-title-and-desc">
+                    <p class="warehouses-main-title">склады в нижнем новгороде</p>
+                    <p class="warehouses-title-desc">Перечень оказываемых услуг на складах
+                        может отличаться, уточняйте у оператора по номеру: <a href="tel:8007750886">8-800-775-08-86</a>
+                    </p>
+                </div>
+                <ul class="warehouse-list">
+                    <li class="warehouse-item">
+                        <img class="warehouse-img" src="images/warehouse-1.jpg" alt="Склад">
+                        <div class="warehouse-address-container">
+                            <p class="warehouse-address warehouse-name">склад 1</p>
+                            <p class="warehouse-address">адрес: г. Нижний Новгород, ул. Удмурская, д 1</p>
+                            <button class="main-button main-button-distance openPopup" data-title="Нижний Новгород"
+                                data-image="images/nijni-novgorod-1.png"
+                                data-description="г. Нижний Новгород, ул. Удмурская, д 1"
+                                data-link="https://yandex.ru/maps/47/nizhny-novgorod/house/udmurtskaya_ulitsa_1/YEoYfg9kTUUPQFtsfX54cnRjYw==/?ll=43.884408%2C56.293807&z=16.47"
+                                data-services="1. Перегрузка, 2. Разгрузка механическая, 3. Разгрузка ручная, 4. Перепаллетирование, 5. Обрешетка, 6. Картонная коробка, 7. Стрейч-пленка, 8. Стреп-лента, 9. Хранение на открытой площадке, 10. Хранение в холодном ангаре">Перечень
+                                услуг</button>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+            <section class="warehouses">
+                <div class="warehouses-title-and-desc">
+                    <p class="warehouses-main-title">склады в калуге</p>
+                    <p class="warehouses-title-desc">Перечень оказываемых услуг на складах
+                        может отличаться, уточняйте у оператора по номеру: <a href="tel:8007750886">8-800-775-08-86</a>
+                    </p>
+                </div>
+                <ul class="warehouse-list">
+                    <li class="warehouse-item">
+                        <img class="warehouse-img" src="images/warehouse-1.jpg" alt="Склад">
+                        <div class="warehouse-address-container">
+                            <p class="warehouse-address warehouse-name">склад 1</p>
+                            <p class="warehouse-address">адрес: г. Калуга, Тульское шоссе, 36с1</p>
+                            <button class="main-button main-button-distance openPopup" data-title="Калуга"
+                                data-image="images/kalyga-1.png" data-description="г. Калуга, Тульское шоссе, 36с1"
+                                data-link="https://yandex.ru/maps/6/kaluga/house/tulskoye_shosse_36s1/Z08YdANnSEIDQFtufXh3dXVrbQ==/?ll=36.247174%2C54.464989&z=16.47"
+                                data-services="1. Перегрузка, 2. Разгрузка механическая, 3. Разгрузка ручная, 4. Перепаллетирование, 5. Обрешетка, 6. Картонная коробка, 7. Стрейч-пленка, 8. Стреп-лента, 9. Хранение на открытой площадке, 10. Хранение под навесом">Перечень
+                                услуг</button>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+            <section class="warehouses">
+                <div class="warehouses-title-and-desc">
+                    <p class="warehouses-main-title">склады в воронеже</p>
+                    <p class="warehouses-title-desc">Перечень оказываемых услуг на складах
+                        может отличаться, уточняйте у оператора по номеру: <a href="tel:8007750886">8-800-775-08-86</a>
+                    </p>
+                </div>
+                <ul class="warehouse-list">
+                    <li class="warehouse-item">
+                        <img class="warehouse-img" src="images/warehouse-1.jpg" alt="Склад">
+                        <div class="warehouse-address-container">
+                            <p class="warehouse-address warehouse-name">склад 1</p>
+                            <p class="warehouse-address">адрес: г. Воронеж, ул. 45й Стрелковой дивизии, 263А к2</p>
+                            <button class="main-button main-button-distance openPopup" data-title="Воронеж"
+                                data-image="images/voronej-1.png"
+                                data-description="г. Воронеж, ул. 45й Стрелковой дивизии, 263А к2"
+                                data-link="https://yandex.ru/maps/193/voronezh/house/ulitsa_45_y_strelkovoy_divizii_263a_2/Z0AYdwRnSk0AQFtrfXp4cX5hYQ==/?ll=39.137387%2C51.690225&z=16.47"
+                                data-services="1. Перегрузка, 2. Разгрузка механическая, 3. Разгрузка ручная, 4. Перепаллетирование, 5. Обрешетка, 6. Картонная коробка, 7. Стрейч-пленка, 8. Стреп-лента, 9. Хранение на открытой площадке, 10. Хранение в холодном ангаре">Перечень
+                                услуг</button>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+            <section class="warehouses">
+                <div class="warehouses-title-and-desc">
+                    <p class="warehouses-main-title">склады в самаре</p>
+                    <p class="warehouses-title-desc">Перечень оказываемых услуг на складах
+                        может отличаться, уточняйте у оператора по номеру: <a href="tel:8007750886">8-800-775-08-86</a>
+                    </p>
+                </div>
+                <ul class="warehouse-list">
+                    <li class="warehouse-item">
+                        <img class="warehouse-img" src="images/warehouse-1.jpg" alt="Склад">
+                        <div class="warehouse-address-container">
+                            <p class="warehouse-address warehouse-name">склад 1</p>
+                            <p class="warehouse-address">адрес: г. Самара, Уральское шоссе, д2</p>
+                            <button class="main-button main-button-distance openPopup" data-title="Самара"
+                                data-image="images/samara-1.png" data-description="г. Самара, Уральское шоссе, д2"
+                                data-link="https://yandex.ru/maps/51/samara/house/uralskoye_shosse_2/YUkYdwBjTUAGQFtpfX1zdnxgYQ==/?ll=50.173451%2C53.127036&z=16.47"
+                                data-services="1. Перегрузка, 2. Разгрузка механическая, 3. Разгрузка ручная, 4. Перепаллетирование, 5. Обрешетка, 6. Картонная коробка, 7. Стрейч-пленка, 8. Стреп-лента, 9. Хранение на открытой площадке, 10. Хранение в холодном ангаре">Перечень
+                                услуг</button>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+            <section class="warehouses">
+                <div class="warehouses-title-and-desc">
+                    <p class="warehouses-main-title">склады в казани</p>
+                    <p class="warehouses-title-desc">Перечень оказываемых услуг на складах
+                        может отличаться, уточняйте у оператора по номеру: <a href="tel:8007750886">8-800-775-08-86</a>
+                    </p>
+                </div>
+                <ul class="warehouse-list">
+                    <li class="warehouse-item">
+                        <img class="warehouse-img" src="images/warehouse-1.jpg" alt="Склад">
+                        <div class="warehouse-address-container">
+                            <p class="warehouse-address warehouse-name">склад 1</p>
+                            <p class="warehouse-address">адрес: г. Зеленодольск, пос. Нарат, ул. Лесная, 1В.</p>
+                            <button class="main-button main-button-distance openPopup" data-title="Казань"
+                                data-image="images/kazan-1.png"
+                                data-description="г. Зеленодольск, пос. Нарат, ул. Лесная, 1В."
+                                data-link="https://yandex.ru/maps/11119/republic-of-tatarstan/house/lesnaya_ulitsa_1v/YEEYcAJhTkQDQFtvfXR5cXRkbQ==/?ll=48.651714%2C55.880879&z=16.47"
+                                data-services="1. Перегрузка, 2. Разгрузка механическая, 3. Разгрузка ручная, 4. Перепаллетирование, 5. Обрешетка, 6. Картонная коробка, 7. Стрейч-пленка, 8. Стреп-лента, 9. Хранение на открытой площадке">Перечень
+                                услуг</button>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+            <section class="warehouses">
+                <div class="warehouses-title-and-desc">
+                    <p class="warehouses-main-title">склады в екатеринбурге</p>
+                    <p class="warehouses-title-desc">Перечень оказываемых услуг на складах
+                        может отличаться, уточняйте у оператора по номеру: <a href="tel:8007750886">8-800-775-08-86</a>
+                    </p>
+                </div>
+                <ul class="warehouse-list">
+                    <li class="warehouse-item">
+                        <img class="warehouse-img" src="images/warehouse-1.jpg" alt="Склад">
+                        <div class="warehouse-address-container">
+                            <p class="warehouse-address warehouse-name">склад 1</p>
+                            <p class="warehouse-address">адрес: г. Ектеринбург, ул. Черняховского, 68Д</p>
+                            <button class="main-button main-button-distance openPopup" data-title="Екатеринбург"
+                                data-image="images/ekaterinbyrg-1.png"
+                                data-description="г. Ектеринбург, ул. Черняховского, 68Д"
+                                data-link="https://yandex.ru/maps/54/yekaterinburg/house/ulitsa_chernyakhovskogo_68d/YkkYcQRiTUACQFtsfXt0cHhiYQ==/?ll=60.732455%2C56.751416&z=16.47"
+                                data-services="1. Перегрузка, 2. Разгрузка механическая, 3. Разгрузка ручная, 4. Перепаллетирование, 5. Обрешетка, 6. Картонная коробка, 7. Стрейч-пленка, 8. Стреп-лента, 9. Хранение на открытой площадке">Перечень
+                                услуг</button>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <nav class="footer-nav">
+            <div class="logo-container">
+                <a href="#"></a><img class="footer-logo" src="images\logo_glob_upak.svg" alt="Логотип"></a>
+                <p>GlobUpak &copy;</p>
+            </div>
+            <ul class="footer-list">
+                <li><a href="index.html">О НАС</a></li>
+                <li><a href="services.html">УСЛУГИ</a></li>
+                <li><a href="warehouses.html">НАШИ СКЛАДЫ</a></li>
+                <li><a href="prices.html">ЦЕНЫ</a></li>
+                <li><a href="contacts.html">КОНТАКТЫ</a></li>
+            </ul>
+            <div class="footer-contacts">
+                <p><a href="tel:8007750886">Телефон 8-800-775-08-86</a></p>
+                <p><a href="mailto:sales@glob-upak.ru">Email sales@glob-upak.ru</a></p>
+            </div>
+        </nav>
+    </footer>
+    <script src="js\burger.js"></script>
+    <script src="js\popup.js"></script>
+</body>
+
+</html>
